@@ -1,91 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Something Beautiful is Coming</title>
+<title>Coming Soon</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
+margin:0;
 height:100vh;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
+background:#000000;
 font-family:'Poppins',sans-serif;
-background:linear-gradient(135deg,#ff4e7a,#ff7aa2,#ffb6c1);
-overflow:hidden;
 color:white;
 text-align:center;
 }
 
-/* floating hearts */
-
-.heart{
-position:absolute;
-color:white;
-font-size:20px;
-animation:float 8s linear infinite;
-opacity:0.7;
-}
-
-@keyframes float{
-0%{transform:translateY(100vh);opacity:0;}
-50%{opacity:1;}
-100%{transform:translateY(-10vh);opacity:0;}
-}
-
-/* main card */
-
 .container{
-position:relative;
-padding:60px;
-width:480px;
-background:rgba(255,255,255,0.15);
-border-radius:25px;
-backdrop-filter:blur(12px);
-box-shadow:0 0 40px rgba(0,0,0,0.2);
+width:420px;
+padding:45px;
+background:#0a0a0a;
+border-radius:18px;
+box-shadow:0 0 25px rgba(255,255,255,0.05);
 }
 
 h1{
-font-size:42px;
-margin-bottom:15px;
-}
-
-.name{
-font-family:'Great Vibes',cursive;
-font-size:48px;
-margin-bottom:20px;
+font-size:44px;
+margin-bottom:10px;
 }
 
 .subtitle{
-font-size:16px;
-opacity:0.9;
+color:#9ca3af;
 margin-bottom:25px;
 }
 
-.message{
+.owner{
 font-size:18px;
-margin-bottom:30px;
+margin-bottom:35px;
+}
+
+.contact{
+font-size:22px;
+margin-bottom:20px;
+font-weight:600;
+}
+
+.button a{
+text-decoration:none;
+background:#ff2c55;
+padding:14px 34px;
+border-radius:30px;
+color:white;
+font-weight:600;
+font-size:16px;
+display:inline-block;
+transition:0.3s;
+}
+
+.button a:hover{
+background:#ff4d6d;
+transform:scale(1.05);
+}
+
+.email{
+margin-top:15px;
+font-size:15px;
+color:#9ca3af;
 }
 
 .footer{
-font-size:14px;
-opacity:0.8;
+margin-top:30px;
+font-size:13px;
+color:#666;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -94,40 +90,31 @@ opacity:0.8;
 
 <h1>Coming Soon</h1>
 
-<div class="name">
-For Unnati ❤️
-</div>
-
 <div class="subtitle">
-A little surprise is being prepared...
+This website is currently under development
 </div>
 
-<div class="message">
-Something beautiful is on its way.
-This space is reserved for someone very special.
+<div class="owner">
+Domain owned by <strong>Swarnim Pratap Singh</strong>
+</div>
+
+<div class="contact">Contact</div>
+
+<div class="button">
+<a href="https://instagram.com/swarnim_pratap" target="_blank">
+Visit Instagram
+</a>
+</div>
+
+<div class="email">
+Contact me at swarnimiam@gmail.com
 </div>
 
 <div class="footer">
-Made with ❤️ by Swarnim
+© Swarnim Pratap Singh
 </div>
 
 </div>
-
-<script>
-
-/* generate floating hearts */
-
-for(let i=0;i<25;i++){
-let heart=document.createElement("div");
-heart.className="heart";
-heart.innerHTML="❤";
-heart.style.left=Math.random()*100+"vw";
-heart.style.fontSize=(Math.random()*20+10)+"px";
-heart.style.animationDuration=(Math.random()*5+5)+"s";
-document.body.appendChild(heart);
-}
-
-</script>
 
 </body>
 </html>
